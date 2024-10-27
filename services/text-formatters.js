@@ -46,7 +46,7 @@ function starRating(rating, max = 5) {
 
 /**
  * Converts the ISO 4217 code to the corresponding currency symbol.
- * If the the symbol for the code is not found, then the code itself is returned.
+ * If the symbol for the code is not found, then the code itself is returned.
  *
  * @param {string} code - ISO 4217 code
  * @returns {string} Currency symbol for the code
