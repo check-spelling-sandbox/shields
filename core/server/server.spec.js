@@ -66,7 +66,7 @@ describe('The server', function () {
       )
     })
 
-    it('should serve badges with with logo with maxAge=86400', async function () {
+    it('should serve badges with logo with maxAge=86400', async function () {
       const { headers } = await got(
         `${baseUrl}badge/foo-bar-blue?logo=javascript`,
       )
