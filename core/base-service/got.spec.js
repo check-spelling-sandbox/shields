@@ -33,7 +33,7 @@ describe('got wrapper', function () {
     ).to.be.rejectedWith(Inaccessible, 'oh no')
   })
 
-  it('should throw an Inaccessible error if the host can not be accessed', async function () {
+  it('should throw an Inaccessible error if the host cannot be accessed', async function () {
     this.timeout(5000)
     nock.disableNetConnect()
     const sendRequest = _fetchFactory(1024)
