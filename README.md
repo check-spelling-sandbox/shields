@@ -162,7 +162,7 @@ quality. There are many existing libraries for rendering these badges, and
 alternatives to the hosted Shields badge service. [awesome-badges][] is a
 curated collection of such resources.
 [Contributions][contributing to awesome-badges] may be considered there.
-(The presence of a project in that collection should not be interpreted as an endorsement nor promotion from the Shields project)
+(The presence of a project in that collection should neither be interpreted as an endorsement nor promotion from the Shields project)
 
 [awesome-badges]: https://github.com/badges/awesome-badges
 [contributing to awesome-badges]: https://github.com/badges/awesome-badges/blob/main/CONTRIBUTING.md
