@@ -17,7 +17,7 @@ t.create('contributor count for unknown package')
     message: 'package not found',
   })
 
-t.create('contributor count for package package without a maintainers property')
+t.create('contributor count for package without a maintainers property')
   .get('/package-without-maintainers.json')
   .intercept(nock =>
     nock('https://registry.npmjs.org')
