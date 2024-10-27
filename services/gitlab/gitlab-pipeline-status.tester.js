@@ -2,7 +2,7 @@ import { isBuildStatus } from '../build-status.js'
 import { ServiceTester } from '../tester.js'
 export const t = new ServiceTester({
   id: 'GitlabPipeline',
-  title: 'Gitlab Pipeline',
+  title: 'GitLab Pipeline',
   pathPrefix: '/gitlab',
 })
 
@@ -29,7 +29,7 @@ t.create('Pipeline status (nonexistent branch)')
     message: 'branch not found',
   })
 
-// Gitlab will redirect users to a sign-in page
+// GitLab will redirect users to a sign-in page
 // (which we ultimately see as a 403 error) in the event
 // a nonexistent, or private, repository is specified.
 // Given the additional complexity that would've been required to

@@ -50,7 +50,7 @@ export default class GitlabPipelineCoverage extends BaseSvgScrapingService {
   static openApi = {
     '/gitlab/pipeline-coverage/{project}': {
       get: {
-        summary: 'Gitlab Code Coverage',
+        summary: 'GitLab Code Coverage',
         description: description + moreDocs,
         parameters: [
           pathParam({

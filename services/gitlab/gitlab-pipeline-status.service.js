@@ -35,7 +35,7 @@ Now your settings should look like this:
 
 Your badge should be working fine now.
 
-NB - The badge will display 'inaccessible' if the specified repo was not found on the target Gitlab instance.
+NB - The badge will display 'inaccessible' if the specified repo was not found on the target GitLab instance.
 `
 
 class GitlabPipelineStatus extends BaseSvgScrapingService {
@@ -50,7 +50,7 @@ class GitlabPipelineStatus extends BaseSvgScrapingService {
   static openApi = {
     '/gitlab/pipeline-status/{project}': {
       get: {
-        summary: 'Gitlab Pipeline Status',
+        summary: 'GitLab Pipeline Status',
         description: description + moreDocs,
         parameters: [
           pathParam({

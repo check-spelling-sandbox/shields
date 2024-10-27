@@ -23,7 +23,7 @@ t.create('Coverage (nonexistent branch)')
     message: 'not set up',
   })
 
-// Gitlab will redirect users to a sign-in page
+// GitLab will redirect users to a sign-in page
 // (which we ultimately see as a 403 error) in the event
 // a nonexistent, or private, repository is specified.
 // Given the additional complexity that would've been required to

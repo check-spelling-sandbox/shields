@@ -21,7 +21,7 @@ t.create('depfu GitHub dependencies (repo not found)')
   .get('/dependencies/github/pyvesb/emptyrepo.json')
   .expectBadge({ label: 'dependencies', message: 'not found' })
 
-t.create('depfu Gitlab dependencies (valid)')
+t.create('depfu GitLab dependencies (valid)')
   .get('/dependencies/gitlab/depfu/example-ruby.json')
   .expectBadge({
     label: 'dependencies',
@@ -35,7 +35,7 @@ t.create('depfu GitHub dependencies (no separator)')
     message: 'invalid parameter',
   })
 
-t.create('depfu Gitlab dependencies (valid with subgroup)')
+t.create('depfu GitLab dependencies (valid with subgroup)')
   .get(
     '/dependencies/gitlab/shields-example-group/subgroup/example-nodejs.json',
   )
@@ -44,11 +44,11 @@ t.create('depfu Gitlab dependencies (valid with subgroup)')
     message: isDependencyStatus,
   })
 
-t.create('depfu Gitlab dependencies (repo not found)')
+t.create('depfu GitLab dependencies (repo not found)')
   .get('/dependencies/gitlab/fdroid/nonexistant.json')
   .expectBadge({ label: 'dependencies', message: 'not found' })
 
-t.create('depfu Gitlab dependencies (no separator)')
+t.create('depfu GitLab dependencies (no separator)')
   .get('/dependencies/gitlab/example-ruby.json')
   .expectBadge({
     label: 'dependencies',

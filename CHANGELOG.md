@@ -479,7 +479,7 @@ Other changes in this release:
 
 ## server-2022-02-01
 
-- [Depfu] Add support for Gitlab [#7475](https://github.com/badges/shields/issues/7475)
+- [Depfu] Add support for GitLab [#7475](https://github.com/badges/shields/issues/7475)
 - replace label in hn-user-karma with U/ [#7500](https://github.com/badges/shields/issues/7500)
 - Support [Feedz] response with multiple pages without items [#7476](https://github.com/badges/shields/issues/7476)
 - revert decamelize and humanize-string to old versions [#7449](https://github.com/badges/shields/issues/7449)
