@@ -66,7 +66,7 @@ class PowershellGalleryPlatformSupport extends BaseXmlService {
           platforms.add(WINDOWS_TAG_NAME.toLowerCase())
           break
 
-        // Look for MacOS
+        // Look for macOS
         case MACOS_TAG_NAME:
           platforms.add(MACOS_TAG_NAME.toLowerCase())
           break
