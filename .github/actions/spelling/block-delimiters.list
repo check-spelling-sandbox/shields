@@ -1,0 +1,71 @@
+# Public Keys
+-----BEGIN PUBLIC KEY-----
+-----END PUBLIC KEY-----
+
+# RSA Private Key
+-----BEGIN RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
+
+# GPG Public Key
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+-----END PGP PUBLIC KEY BLOCK-----
+
+# GPG Signature
+-----BEGIN PGP SIGNATURE-----
+-----END PGP SIGNATURE-----
+
+# Certificates
+-----BEGIN CERTIFICATE-----
+-----END CERTIFICATE-----
+
+# tests
+get(
+)
+
+# tests
+given(
+)
+
+# tests
+.regex(/(:[\w.]+=[^:]*)+/
+i)
+
+# tests
+.regex(/^[0-9]+(b|kb|mb|gb|tb)$/
+i)
+
+# tests
+.regex(/
+/)
+
+# tests
+Joi.string().regex(
+)
+
+# tests
+.regex(
+),
+
+# tests
+expectRedirect(
+)
+
+# tests
+expectBadge({
+})
+
+# deprecated Badges
+Here is a listing of all deleted badges that were once part of the Shields.io service:
+Additional Information
+
+# services/dynamic/dynamic-xml.spec.js
+`<!DOCTYPE html>
+`
+
+# ?
+frameworkNameMap = {
+const
+
+# ?
+parameters: pathParams({
+})
