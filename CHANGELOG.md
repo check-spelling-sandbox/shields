@@ -111,7 +111,7 @@ for more details
 ## server-2024-03-01
 
 - feat(gitea): add last commit badge [#9995](https://github.com/badges/shields/issues/9995)
-- [GithubCreatedAt] Add Created At Badge for Github [#9981](https://github.com/badges/shields/issues/9981)
+- [GithubCreatedAt] Add Created At Badge for GitHub [#9981](https://github.com/badges/shields/issues/9981)
 - Added custom bucket url support for [Scoop] [#9984](https://github.com/badges/shields/issues/9984)
 - [NpmUnpackedSize] Unpacked Size Badge [#9954](https://github.com/badges/shields/issues/9954)
 - [Website] Render `status: down` badge if website is unresponsive [#9966](https://github.com/badges/shields/issues/9966)
@@ -263,7 +263,7 @@ Other changes in this release:
 
 ## server-2023-05-01
 
-**Removal:** For users who need to maintain a Github Token pool, storage has been provided via the `RedisTokenPersistence` and `REDIS_URL` settings. This feature was deprecated in `server-2023-03-01`. As of this release, the `RedisTokenPersistence` backend is now removed. If you are using this feature, you will need to migrate to using the `SQLTokenPersistence` backend for storage and provide a postgres connection string via the `POSTGRES_URL` setting. [#8922](https://github.com/badges/shields/issues/8922)
+**Removal:** For users who need to maintain a GitHub Token pool, storage has been provided via the `RedisTokenPersistence` and `REDIS_URL` settings. This feature was deprecated in `server-2023-03-01`. As of this release, the `RedisTokenPersistence` backend is now removed. If you are using this feature, you will need to migrate to using the `SQLTokenPersistence` backend for storage and provide a postgres connection string via the `POSTGRES_URL` setting. [#8922](https://github.com/badges/shields/issues/8922)
 
 - fail to start server if there are duplicate service names [#9099](https://github.com/badges/shields/issues/9099)
 - [SourceForge] Added badges for SourceForge [#9078](https://github.com/badges/shields/issues/9078) [#9102](https://github.com/badges/shields/issues/9102)
@@ -284,7 +284,7 @@ Other changes in this release:
 
 ## server-2023-03-01
 
-**Deprecation:** For users who need to maintain a Github Token pool, storage has been provided via the `RedisTokenPersistence` and `REDIS_URL` settings. As of this release, the `RedisTokenPersistence` backend is now deprecated and will be removed in a future release. If you are using this feature, you will need to migrate to using the `SQLTokenPersistence` backend for storage and provide a postgres connection string via the `POSTGRES_URL` setting. [#8922](https://github.com/badges/shields/issues/8922)
+**Deprecation:** For users who need to maintain a GitHub Token pool, storage has been provided via the `RedisTokenPersistence` and `REDIS_URL` settings. As of this release, the `RedisTokenPersistence` backend is now deprecated and will be removed in a future release. If you are using this feature, you will need to migrate to using the `SQLTokenPersistence` backend for storage and provide a postgres connection string via the `POSTGRES_URL` setting. [#8922](https://github.com/badges/shields/issues/8922)
 
 - fix: for crates.io versions, use max_stable_version if it exists [#8687](https://github.com/badges/shields/issues/8687)
 - don't autofocus search [#8927](https://github.com/badges/shields/issues/8927)

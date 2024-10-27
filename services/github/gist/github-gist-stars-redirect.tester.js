@@ -1,7 +1,7 @@
 import { ServiceTester } from '../../tester.js'
 export const t = new ServiceTester({
   id: 'GistStarsRedirect',
-  title: 'Github Gist Stars Redirect',
+  title: 'GitHub Gist Stars Redirect',
   pathPrefix: '/github',
 })
 

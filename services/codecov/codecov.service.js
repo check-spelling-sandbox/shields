@@ -46,7 +46,7 @@ export default class Codecov extends BaseSvgScrapingService {
   static route = {
     base: 'codecov/c',
     // https://docs.codecov.io/docs#section-common-questions
-    // Github, BitBucket, and GitLab are the only supported options (long or short form)
+    // GitHub, BitBucket, and GitLab are the only supported options (long or short form)
     pattern: ':vcsName(github|gh|bitbucket|bb|gl|gitlab)/:user/:repo/:branch*',
     queryParamSchema,
   }

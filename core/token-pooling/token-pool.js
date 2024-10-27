@@ -168,7 +168,7 @@ Token.nextResetNever = Number.MAX_SAFE_INTEGER
  * Encapsulate a collection of rate-limited tokens and choose the next
  * available token when one is needed.
  *
- * Designed for the Github API, though may be also useful with other rate-
+ * Designed for the GitHub API, though may be also useful with other rate-
  * limited APIs.
  */
 class TokenPool {

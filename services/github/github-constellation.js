@@ -4,7 +4,7 @@ import log from '../../core/server/log.js'
 import GithubApiProvider from './github-api-provider.js'
 import { setRoutes as setAcceptorRoutes } from './auth/acceptor.js'
 
-// Convenience class with all the stuff related to the Github API and its
+// Convenience class with all the stuff related to the GitHub API and its
 // authorization tokens, to simplify server initialization.
 class GithubConstellation {
   static _createOauthHelper(config) {
@@ -27,7 +27,7 @@ class GithubConstellation {
 
     const { postgres_url: pgUrl, gh_token: globalToken } = config.private
     if (pgUrl) {
-      log.log('Github Token persistence configured with pgUrl')
+      log.log('GitHub Token persistence configured with pgUrl')
       this.persistence = new SqlTokenPersistence({
         url: pgUrl,
         table: 'github_user_tokens',
@@ -39,7 +39,7 @@ class GithubConstellation {
       authType = GithubApiProvider.AUTH_TYPES.GLOBAL_TOKEN
     }
 
-    log.log(`Github using auth type: ${authType}`)
+    log.log(`GitHub using auth type: ${authType}`)
 
     this.apiProvider = new GithubApiProvider({
       baseUrl: config.service.baseUri,

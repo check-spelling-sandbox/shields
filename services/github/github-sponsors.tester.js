@@ -3,7 +3,7 @@ import { ServiceTester } from '../tester.js'
 
 export const t = new ServiceTester({
   id: 'GithubSponsors',
-  title: 'Github Sponsors',
+  title: 'GitHub Sponsors',
   pathPrefix: '/github',
 })
 

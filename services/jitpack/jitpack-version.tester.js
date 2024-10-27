@@ -2,7 +2,7 @@ import Joi from 'joi'
 import { createServiceTester } from '../tester.js'
 export const t = await createServiceTester()
 
-// Github allows versions with chars, etc.
+// GitHub allows versions with chars, etc.
 const isAnyV = Joi.string().regex(/^v.+$/)
 
 t.create('version (groupId)')

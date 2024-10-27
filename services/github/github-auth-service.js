@@ -15,7 +15,7 @@ class GithubAuthV3Service extends BaseJsonService {
   }
 }
 
-// Use Github auth, but only when static auth is configured. By using this
+// Use GitHub auth, but only when static auth is configured. By using this
 // class, in production it will behave like GithubAuthV3Service, and in self-
 // hosting (i.e. with a configured token) like BaseJsonService. This is
 // useful when consuming GitHub endpoints which are not rate-limited: it
@@ -43,7 +43,7 @@ class GithubAuthV4Service extends BaseGraphqlService {
     const url = '/graphql'
 
     /*
-    The Github v4 API requires us to query the rateLimit object to return
+    The GitHub v4 API requires us to query the rateLimit object to return
     rate limit info in the query body instead of the headers:
     https://developer.github.com/v4/guides/resource-limitations/#returning-a-calls-rate-limit-status
     This appends the relevant rateLimit query clause to each
@@ -75,7 +75,7 @@ class GithubAuthV4Service extends BaseGraphqlService {
 }
 
 /*
-Choosing between the Github V3 and V4 APIs when creating a new badge:
+Choosing between the GitHub V3 and V4 APIs when creating a new badge:
 
 With the V3 API, one request = one point off the usage limit.
 With the V4 API one request may be many points off the usage limit depending

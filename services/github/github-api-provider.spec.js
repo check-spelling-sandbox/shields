@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import sinon from 'sinon'
 import GithubApiProvider from './github-api-provider.js'
 
-describe('Github API provider', function () {
+describe('GitHub API provider', function () {
   const baseUrl = 'https://github-api.example.com'
   const reserveFraction = 0.333
 

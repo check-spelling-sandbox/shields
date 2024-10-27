@@ -267,7 +267,7 @@ function versionReduction(versions, phpReleases) {
  * Fetches the PHP release versions from cache if exists, else fetch from the source url and save in cache.
  *
  * @async
- * @param {object} githubApiProvider - Github API provider
+ * @param {object} githubApiProvider - GitHub API provider
  * @returns {Promise<*>} Promise that resolves to parsed response
  */
 async function getPhpReleases(githubApiProvider) {

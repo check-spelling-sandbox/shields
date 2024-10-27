@@ -21,7 +21,7 @@ t.create('github issue title')
   .get('/issues/detail/title/badges/shields/979.json')
   .expectBadge({
     label: 'issue 979',
-    message: 'Github rate limits cause transient service test failures in CI',
+    message: 'GitHub rate limits cause transient service test failures in CI',
   })
 
 t.create('github issue author')

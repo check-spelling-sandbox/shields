@@ -3,7 +3,7 @@ import config from 'config'
 import { fetch } from '../../core/base-service/got.js'
 import GithubApiProvider from './github-api-provider.js'
 
-describe('Github API provider', function () {
+describe('GitHub API provider', function () {
   const baseUrl = process.env.GITHUB_URL || 'https://api.github.com'
   const reserveFraction = 0.333
 

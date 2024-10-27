@@ -31,7 +31,7 @@ const bodySchema = Joi.object({
   .required()
   .unknown(true)
 
-// Provides an interface to the Github API. Manages the base URL.
+// Provides an interface to the GitHub API. Manages the base URL.
 class GithubApiProvider {
   static AUTH_TYPES = {
     NO_AUTH: 'No Auth',

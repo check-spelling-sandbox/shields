@@ -12,7 +12,7 @@ import { setRoutes } from './acceptor.js'
 const fakeClientId = 'githubdabomb'
 const fakeClientSecret = 'foobar'
 
-describe('Github token acceptor', function () {
+describe('GitHub token acceptor', function () {
   const oauthHelper = GithubConstellation._createOauthHelper({
     private: { gh_client_id: fakeClientId, gh_client_secret: fakeClientSecret },
   })

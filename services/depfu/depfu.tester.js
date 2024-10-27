@@ -10,14 +10,14 @@ const isDependencyStatus = Joi.string().valid(
 
 export const t = new ServiceTester({ id: 'depfu', title: 'Depfu' })
 
-t.create('depfu Github dependencies (valid)')
+t.create('depfu GitHub dependencies (valid)')
   .get('/dependencies/github/depfu/example-ruby.json')
   .expectBadge({
     label: 'dependencies',
     message: isDependencyStatus,
   })
 
-t.create('depfu Github dependencies (repo not found)')
+t.create('depfu GitHub dependencies (repo not found)')
   .get('/dependencies/github/pyvesb/emptyrepo.json')
   .expectBadge({ label: 'dependencies', message: 'not found' })
 
@@ -28,7 +28,7 @@ t.create('depfu Gitlab dependencies (valid)')
     message: isDependencyStatus,
   })
 
-t.create('depfu Github dependencies (no separator)')
+t.create('depfu GitHub dependencies (no separator)')
   .get('/dependencies/github/example-ruby.json')
   .expectBadge({
     label: 'dependencies',

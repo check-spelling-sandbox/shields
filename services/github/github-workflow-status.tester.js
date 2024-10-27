@@ -2,7 +2,7 @@ import { ServiceTester } from '../tester.js'
 
 export const t = new ServiceTester({
   id: 'GithubWorkflowStatus',
-  title: 'Github Workflow Status',
+  title: 'GitHub Workflow Status',
   pathPrefix: '/github/workflow/status',
 })
 

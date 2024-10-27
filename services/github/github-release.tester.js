@@ -4,7 +4,7 @@ import { ServiceTester } from '../tester.js'
 
 export const t = new ServiceTester({
   id: 'GithubRelease',
-  title: 'Github Release',
+  title: 'GitHub Release',
   pathPrefix: '/github',
 })
 

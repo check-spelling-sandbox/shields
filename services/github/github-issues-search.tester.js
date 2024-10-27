@@ -2,7 +2,7 @@ import { isMetric } from '../test-validators.js'
 import { ServiceTester } from '../tester.js'
 export const t = new ServiceTester({
   id: 'GithubIssuesSearch',
-  title: 'Github Issues Search',
+  title: 'GitHub Issues Search',
   pathPrefix: '/github',
 })
 
