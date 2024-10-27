@@ -10,6 +10,6 @@ t.create('gets the version of @std/assert')
   .get('/@std/assert.json')
   .expectBadge({ label: 'jsr', message: isSemver })
 
-t.create('returns an error when getting a non-existent')
-  .get('/@std/this-is-a-non-existent-package-name.json')
+t.create('returns an error when getting a nonexistent')
+  .get('/@std/this-is-a-nonexistent-package-name.json')
   .expectBadge({ label: 'jsr', message: 'package not found' })

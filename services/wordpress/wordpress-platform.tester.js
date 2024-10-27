@@ -107,7 +107,7 @@ t.create('Plugin Tested WP Version - old')
     color: 'orange',
   })
 
-t.create('Plugin Tested WP Version - non-exsistant or unsupported')
+t.create('Plugin Tested WP Version - nonexistent or unsupported')
   .get('/plugin/tested/akismet.json')
   .intercept(nock =>
     nock('https://api.wordpress.org')

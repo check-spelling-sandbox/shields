@@ -2,14 +2,14 @@ import { createServiceTester } from '../tester.js'
 import { isIntegerPercentage } from '../test-validators.js'
 export const t = await createServiceTester()
 
-t.create('Non-existent or unauthorized org')
+t.create('nonexistent or unauthorized org')
   .get('/swellaby1239017823123/swellaby:testspace-sample/main.json')
   .expectBadge({
     label: 'tests',
     message: 'org not found or not authorized',
   })
 
-t.create('Non-existent project')
+t.create('nonexistent project')
   .get('/swellaby/swellaby:nope/main/baz.json')
   .expectBadge({
     label: 'tests',

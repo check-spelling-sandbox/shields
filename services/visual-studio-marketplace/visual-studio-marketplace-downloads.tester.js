@@ -51,7 +51,7 @@ t.create('invalid extension id')
     message: 'invalid extension id',
   })
 
-t.create('non existent extension')
+t.create('nonexistent extension')
   .get('/visual-studio-marketplace/d/badges.shields-io-fake.json')
   .expectBadge({
     label: 'vs marketplace',

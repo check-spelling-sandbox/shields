@@ -29,10 +29,10 @@ t.create('version installs | valid: alphanumeric version')
     message: isMetric,
   })
 
-t.create('version installs | not found: non-existent plugin')
+t.create('version installs | not found: nonexistent plugin')
   .get('/not-a-plugin/1.26.json')
   .expectBadge({ label: 'installs', message: 'plugin not found' })
 
-t.create('version installs | not found: non-existent version')
+t.create('version installs | not found: nonexistent version')
   .get('/view-job-filters/1.1-NOT-FOUND.json')
   .expectBadge({ label: 'installs', message: 'version not found' })

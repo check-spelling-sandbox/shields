@@ -45,7 +45,7 @@ t.create('depfu GitLab dependencies (valid with subgroup)')
   })
 
 t.create('depfu GitLab dependencies (repo not found)')
-  .get('/dependencies/gitlab/fdroid/nonexistant.json')
+  .get('/dependencies/gitlab/fdroid/nonexistent.json')
   .expectBadge({ label: 'dependencies', message: 'not found' })
 
 t.create('depfu GitLab dependencies (no separator)')

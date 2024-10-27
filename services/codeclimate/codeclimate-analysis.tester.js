@@ -92,7 +92,7 @@ t.create('issues when outer user repos query returns multiple items')
     message: '11538',
   })
 
-t.create('maintainability letter for non-existent repo')
+t.create('maintainability letter for nonexistent repo')
   .get('/maintainability/unknown/unknown.json')
   .expectBadge({
     label: 'analysis',

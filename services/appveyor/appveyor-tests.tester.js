@@ -48,7 +48,7 @@ t.create('Test status with compact message and custom labels')
     message: isCustomCompactTestTotals,
   })
 
-t.create('Test status on non-existent project')
+t.create('Test status on nonexistent project')
   .timeout(10000)
   .get('/somerandomproject/thatdoesntexist.json')
   .expectBadge({

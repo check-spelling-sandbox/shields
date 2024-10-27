@@ -41,7 +41,7 @@ t.create('Release (custom instance)')
   .expectBadge({ label: 'release', message: isSemver, color: 'blue' })
 
 t.create('Release (project not found)')
-  .get('/fdroid/nonexistant.json')
+  .get('/fdroid/nonexistent.json')
   .expectBadge({ label: 'release', message: 'project not found' })
 
 t.create('Release (no tags)')

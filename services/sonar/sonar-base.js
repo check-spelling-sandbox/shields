@@ -5,7 +5,7 @@ import { isLegacyVersion } from './sonar-helpers.js'
 // It is possible to see HTTP 404 response codes and HTTP 200 responses
 // with empty arrays of metric values, with both the legacy (pre v5.3) and modern APIs.
 //
-// 404 responses can occur with non-existent component keys, as well as unknown/unsupported metrics.
+// 404 responses can occur with nonexistent component keys, as well as unknown/unsupported metrics.
 //
 // 200 responses with empty arrays can occur when the metric key is valid, but the data
 // is unavailable for the specified component, for example using the metric key `tests` with a

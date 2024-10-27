@@ -50,6 +50,6 @@ t.create('Test status on job with no tests')
   .get('/tests.json?jobUrl=https://ci.eclipse.org/orbit/job/orbit-recipes')
   .expectBadge({ label: 'tests', message: 'no tests found' })
 
-t.create('Test status on non-existent job')
+t.create('Test status on nonexistent job')
   .get('/tests.json?jobUrl=https://ci.eclipse.org/orbit/job/does-not-exist')
   .expectBadge({ label: 'tests', message: 'instance or job not found' })

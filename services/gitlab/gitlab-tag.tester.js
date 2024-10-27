@@ -27,7 +27,7 @@ t.create('Tag (custom instance)')
   .expectBadge({ label: 'tag', message: isSemver, color: 'blue' })
 
 t.create('Tag (repo not found)')
-  .get('/fdroid/nonexistant.json')
+  .get('/fdroid/nonexistent.json')
   .expectBadge({ label: 'tag', message: 'project not found' })
 
 t.create('Tag (no tags)')

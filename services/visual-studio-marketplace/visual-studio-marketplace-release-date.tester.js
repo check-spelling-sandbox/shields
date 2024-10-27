@@ -16,7 +16,7 @@ t.create('invalid extension id')
     message: 'invalid extension id',
   })
 
-t.create('non existent extension')
+t.create('nonexistent extension')
   .get(
     '/visual-studio-marketplace/release-date/yasht.terminal-all-in-one-fake.json',
   )

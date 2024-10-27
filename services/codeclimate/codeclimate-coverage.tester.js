@@ -73,7 +73,7 @@ t.create('test coverage when outer user repos query returns multiple items')
     message: '24%',
   })
 
-t.create('test coverage percentage for non-existent repo')
+t.create('test coverage percentage for nonexistent repo')
   .get('/coverage/unknown/unknown.json')
   .expectBadge({
     label: 'coverage',

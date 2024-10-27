@@ -65,7 +65,7 @@ t.create('renders correctly')
   })
 
 // Not ideal, but open collective only returns an empty array
-t.create('shows 0 when given a non existent tier')
+t.create('shows 0 when given a nonexistent tier')
   .get('/shields/1234567890.json')
   .intercept(nock =>
     nock('https://opencollective.com/')

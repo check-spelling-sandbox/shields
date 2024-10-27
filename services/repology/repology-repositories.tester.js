@@ -7,7 +7,7 @@ t.create('Existing project').get('/starship.json').expectBadge({
   message: nonNegativeInteger,
 })
 
-t.create('Non-existent project')
+t.create('Nonexistent project')
   .get('/invalidprojectthatshouldnotexist.json')
   .expectBadge({
     label: 'repositories',

@@ -9,7 +9,7 @@ t.create('request for existing username')
     message: isMetricWithPattern(/ tonnes/),
   })
 
-t.create('invalid username').get('/non-existent-username.json').expectBadge({
+t.create('invalid username').get('/nonexistent-username.json').expectBadge({
   label: 'carbon offset',
   message: 'username not found',
   color: 'red',

@@ -21,5 +21,5 @@ t.create('request for existing username')
   })
 
 t.create('invalid username')
-  .get('/non-existent-username.json')
+  .get('/nonexistent-username.json')
   .expectBadge({ label: 'trees', message: 'username not found', color: 'red' })
