@@ -309,7 +309,7 @@ function queryParams(...params) {
 
 /**
  * @typedef {object} PathParamInput
- * @property {string} name The name of the parameter. Parameter names are case sensitive
+ * @property {string} name The name of the parameter. Parameter names are case-sensitive
  * @property {string} example Example of a valid value for this parameter
  * @property {object} [schema={ type: 'string' }] Parameter schema.
  *    An [OpenAPI Schema object](https://swagger.io/specification/#schema-object)
@@ -323,7 +323,7 @@ function queryParams(...params) {
 
 /**
  * @typedef {object} QueryParamInput
- * @property {string} name The name of the parameter. Parameter names are case sensitive
+ * @property {string} name The name of the parameter. Parameter names are case-sensitive
  * @property {string|null} example Example of a valid value for this parameter
  * @property {object} [schema={ type: 'string' }] Parameter schema.
  *    An [OpenAPI Schema object](https://swagger.io/specification/#schema-object)
