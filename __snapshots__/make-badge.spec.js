@@ -2161,7 +2161,7 @@ exports['The badge generator "social" template badge generation should match sna
 
 `
 
-exports['The badge generator badges with logos should always produce the same badge badge with logo 1'] = `
+exports['The badge generator badges with logos should always produce the same badge with logo 1'] = `
 <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
