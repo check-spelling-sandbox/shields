@@ -305,7 +305,7 @@ Other changes in this release:
 ## server-2023-01-01
 
 - Breaking change: Routes for GitHub workflows badge have changed. See https://github.com/badges/shields/issues/8671 for more details
-- Behaviour change: In this release we fixed a long standing bug. GitHub badges were previously not reading the base URL from the `config.service.baseUri`.
+- Behaviour change: In this release we fixed a long-standing bug. GitHub badges were previously not reading the base URL from the `config.service.baseUri`.
   This release fixes that bug, bringing the code into line with the documented behaviour. This should not cause a behaviour change for most users,
   but users who had previously set a value in `config.service.baseUri` which was previously ignored could see this now have an effect.
   Users who configure their instance using env vars rather than yaml should see no change.
