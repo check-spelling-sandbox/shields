@@ -102,7 +102,7 @@ t.create('engines satisfies some lts node versions - scoped')
   .intercept(mockVersionsSha())
   .expectBadge({ label: 'node-lts', message: '10', color: 'yellow' })
 
-t.create("gets the tagged release's node version version of ionic")
+t.create("gets the tagged release's node version of ionic")
   .get('/ionic/testing.json')
   .expectBadge({ label: 'node-lts@testing' })
   .afterJSON(json => {

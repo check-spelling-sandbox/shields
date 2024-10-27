@@ -65,31 +65,31 @@ async function run() {
       'master',
     )
 
-    const oldVesionModuleKey = findKeyEndingWith(
+    const oldVersionModuleKey = findKeyEndingWith(
       pkgLockOldJson.packages,
       `node_modules/${packageName}`,
     )
-    const newVesionModuleKey = findKeyEndingWith(
+    const newVersionModuleKey = findKeyEndingWith(
       pkgLockNewJson.packages,
       `node_modules/${packageName}`,
     )
-    let oldVersion = pkgLockOldJson.packages[oldVesionModuleKey].version
-    let newVersion = pkgLockNewJson.packages[newVesionModuleKey].version
+    let oldVersion = pkgLockOldJson.packages[oldVersionModuleKey].version
+    let newVersion = pkgLockNewJson.packages[newVersionModuleKey].version
 
-    const oldVesionModuleKeyParent = findKeyEndingWith(
+    const oldVersionModuleKeyParent = findKeyEndingWith(
       pkgLockOldJson.packages,
       `node_modules/${packageParentName}`,
     )
-    const newVesionModuleKeyParent = findKeyEndingWith(
+    const newVersionModuleKeyParent = findKeyEndingWith(
       pkgLockNewJson.packages,
       `node_modules/${packageParentName}`,
     )
     const oldVersionParent =
-      pkgLockOldJson.packages[oldVesionModuleKeyParent].dependencies[
+      pkgLockOldJson.packages[oldVersionModuleKeyParent].dependencies[
         packageName
       ].substring(1)
     const newVersionParent =
-      pkgLockNewJson.packages[newVesionModuleKeyParent].dependencies[
+      pkgLockNewJson.packages[newVersionModuleKeyParent].dependencies[
         packageName
       ].substring(1)
 

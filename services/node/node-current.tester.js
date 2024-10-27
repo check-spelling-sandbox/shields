@@ -73,7 +73,7 @@ t.create('engines does not satisfy current node version - scoped')
   .intercept(mockCurrentSha(13))
   .expectBadge({ label: 'node', message: '12', color: 'yellow' })
 
-t.create("gets the tagged release's node version version of ionic")
+t.create("gets the tagged release's node version of ionic")
   .get('/ionic/testing.json')
   .expectBadge({ label: 'node@testing' })
   .afterJSON(json => {
