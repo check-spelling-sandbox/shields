@@ -15,7 +15,7 @@ Please [improve the tutorial](https://github.com/badges/shields/edit/master/doc/
 
 ## (2) Setup
 
-### Pre-requisites
+### Prerequisites
 
 #### Git
 
