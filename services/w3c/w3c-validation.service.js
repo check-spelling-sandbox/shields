@@ -67,7 +67,7 @@ export default class W3cValidation extends BaseJsonService {
             name: 'preset',
             example: 'HTML, SVG 1.1, MathML 3.0',
             description:
-              'This is used to determine the schema for the document to be valdiated against.',
+              'This is used to determine the schema for the document to be validated against.',
             schema: {
               type: 'string',
               enum: [
