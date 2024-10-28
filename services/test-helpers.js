@@ -323,7 +323,7 @@ async function testAuth(serviceClass, authMethod, dummyResponse, options = {}) {
       }
 
       default:
-        throw new TypeError(`Unkown auth method for ${serviceClass.name}.`)
+        throw new TypeError(`Unknown auth method for ${serviceClass.name}.`)
     }
   })
 
