@@ -47,7 +47,7 @@ class PythonVersionFromToml extends BaseTomlService {
   static defaultBadgeData = { label: 'python' }
 
   static render({ requiresPythonString }) {
-    // we only show requries-python as is
+    // we only show requires-python as is
     // for more info read the following issues:
     // https://github.com/badges/shields/issues/9410
     // https://github.com/badges/shields/issues/5551
