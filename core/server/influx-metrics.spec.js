@@ -103,7 +103,7 @@ describe('Influx metrics', function () {
       process.env.INSTANCE_ID = 'instance2'
       influxMetrics = new InfluxMetrics(metricInstance, {
         url: 'https://shields-metrics.io/metrics',
-        timeoutMillseconds: 100,
+        timeoutMilliseconds: 100,
         intervalSeconds: 0.001,
         username: 'metrics-username',
         password: 'metrics-password',
@@ -134,7 +134,7 @@ describe('Influx metrics', function () {
 
     const influxMetrics = new InfluxMetrics(metricInstance, {
       url: 'https://shields-metrics.io/metrics',
-      timeoutMillseconds: 50,
+      timeoutMilliseconds: 50,
       intervalSeconds: 0,
       username: 'metrics-username',
       password: 'metrics-password',

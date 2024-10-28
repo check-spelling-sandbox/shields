@@ -16,7 +16,7 @@ export default class InfluxMetrics {
       url: this._config.url,
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: await this.metrics(),
-      timeout: { request: this._config.timeoutMillseconds },
+      timeout: { request: this._config.timeoutMilliseconds },
       username: this._config.username,
       password: this._config.password,
       throwHttpErrors: false,
