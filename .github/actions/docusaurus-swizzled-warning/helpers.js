@@ -34,14 +34,14 @@ async function getAllFilesForPullRequest(client, owner, repo, pullNumber) {
 }
 
 /**
- * Get a list of files changed betwen two tags for a github repo
+ * Get a list of files changed between two tags for a github repo
  *
  * @param {object} client hydrated octokit ready to use for GitHub Actions
  * @param {string} owner repo owner
  * @param {string} repo repo name
  * @param {string} baseTag base tag
  * @param {string} headTag head tag
- * @returns {string[]} Array listing all changed files betwen the base tag and the head tag
+ * @returns {string[]} Array listing all changed files between the base tag and the head tag
  */
 async function getChangedFilesBetweenTags(
   client,
@@ -76,7 +76,7 @@ function findKeyEndingWith(obj, ending) {
  * @param {string} repo Repo name
  * @param {string} path Path of the file in repo relative to root directory
  * @param {string} ref Git refrence (commit, branch, tag)
- * @returns {string[]} Array listing all changed files betwen the base tag and the head tag
+ * @returns {string[]} Array listing all changed files between the base tag and the head tag
  */
 async function getLargeJsonAtRef(client, owner, repo, path, ref) {
   const fileSha = (
