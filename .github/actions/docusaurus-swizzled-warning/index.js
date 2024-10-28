@@ -21,12 +21,12 @@ async function run() {
     const client = github.getOctokit(token)
     const packageName = 'docusaurus-theme-openapi'
     const packageParentName = 'docusaurus-preset-openapi'
-    const overideComponents = ['Curl', 'Response']
+    const overrideComponents = ['Curl', 'Response']
     const messageTemplate = `<table><thead><tr><th colspan="2">
       ⚠️ This PR contains changes to components of ${packageName} we've overridden
     </th></tr>
     <tr><th colspan="2">
-      We need to watch out for changes to the ${overideComponents.join(
+      We need to watch out for changes to the ${overrideComponents.join(
         ', ',
       )} components
     </th></tr></thead>
@@ -112,7 +112,7 @@ async function run() {
         `v${oldVersion}`,
         `v${newVersion}`,
       )
-      const changedComponents = overideComponents.filter(
+      const changedComponents = overrideComponents.filter(
         component =>
           pkgChangedFiles.filter(
             path =>
@@ -123,7 +123,7 @@ async function run() {
       const versionReport = `<tbody><tr><td> Old version </td><td> ${oldVersion} </td></tr>
       <tr><td> New version </td><td> ${newVersion} </td></tr>
       `
-      const changedComponentsReport = `<tr><td> Overide components changed </td><td> ${changedComponents.join(
+      const changedComponentsReport = `<tr><td> Override components changed </td><td> ${changedComponents.join(
         ', ',
       )} </td></tr></tbody></table>
       `
