@@ -444,7 +444,7 @@ Other changes in this release:
 - fix [pypi] badges when package has null license [#7761](https://github.com/badges/shields/issues/7761)
 - Add a [pub] publisher badge [#7715](https://github.com/badges/shields/issues/7715)
 - Switch Steam file size badge to informational color [#7722](https://github.com/badges/shields/issues/7722)
-- Make W3C and Youtube documentation links clickable [#7721](https://github.com/badges/shields/issues/7721)
+- Make W3C and YouTube documentation links clickable [#7721](https://github.com/badges/shields/issues/7721)
 - Improve Wercker examples [#7720](https://github.com/badges/shields/issues/7720)
 - Improve Cirrus CI examples [#7719](https://github.com/badges/shields/issues/7719)
 - Support [CodeClimate] responses with multiple data items [#7716](https://github.com/badges/shields/issues/7716)
@@ -602,7 +602,7 @@ Other changes in this release:
 - Deprecate [Bintray] service [#6423](https://github.com/badges/shields/issues/6423)
 - Support git hash in [nexus] SNAPSHOT version [#6369](https://github.com/badges/shields/issues/6369)
 - Replace 4183C4 with blue [#6366](https://github.com/badges/shields/issues/6366)
-- [Youtube] Added channel view count and subscriber count badges [#6333](https://github.com/badges/shields/issues/6333)
+- [YouTube] Added channel view count and subscriber count badges [#6333](https://github.com/badges/shields/issues/6333)
 - Fix Netlify badge by adding new color schema [#6340](https://github.com/badges/shields/issues/6340)
 - [REUSE] Add service badges [#6330](https://github.com/badges/shields/issues/6330)
 - Dependency updates
