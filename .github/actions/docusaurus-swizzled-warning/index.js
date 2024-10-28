@@ -94,7 +94,7 @@ async function run() {
       ].substring(1)
 
     // if parent dependency is higher version then existing
-    // npm install will retrive the newer version from the parent dependency
+    // npm install will retrieve the newer version from the parent dependency
     if (oldVersionParent > oldVersion) {
       oldVersion = oldVersionParent
     }
