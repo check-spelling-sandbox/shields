@@ -16,7 +16,7 @@ t.create('score valid')
     ),
   })
 
-t.create('score ivalid')
+t.create('score invalid')
   .get('/github.com/invalid-user/invalid-repo.json')
   .expectBadge({
     label: 'score',
