@@ -575,7 +575,7 @@ describe('BaseService', function () {
       ).to.deep.equal({ message: 'The CI password is abc123' })
     })
 
-    it('when auth is not configured properly, invoke() returns inacessible', async function () {
+    it('when auth is not configured properly, invoke() returns inaccessible', async function () {
       expect(
         await AuthService.invoke(
           {},
