@@ -75,7 +75,7 @@ function findKeyEndingWith(obj, ending) {
  * @param {string} owner Repo owner
  * @param {string} repo Repo name
  * @param {string} path Path of the file in repo relative to root directory
- * @param {string} ref Git refrence (commit, branch, tag)
+ * @param {string} ref Git reference (commit, branch, tag)
  * @returns {string[]} Array listing all changed files between the base tag and the head tag
  */
 async function getLargeJsonAtRef(client, owner, repo, path, ref) {
