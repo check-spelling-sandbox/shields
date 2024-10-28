@@ -331,7 +331,7 @@ async function testAuth(serviceClass, authMethod, dummyResponse, options = {}) {
     await serviceClass.invoke(defaultContext, config, exampleInvokeParams),
   ).to.not.have.property('isError')
 
-  // if we get 'Mocks not yet satisfied' we have redundent authOrigins or we are missing a critical request
+  // if we get 'Mocks not yet satisfied' we have redundant authOrigins or we are missing a critical request
   scopeArr.forEach(scope => scope.done())
 }
 
