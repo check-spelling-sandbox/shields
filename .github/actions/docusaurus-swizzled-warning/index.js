@@ -113,11 +113,11 @@ async function run() {
         `v${newVersion}`,
       )
       const changedComponents = overideComponents.filter(
-        componenet =>
+        component =>
           pkgChangedFiles.filter(
             path =>
               path.includes('docusaurus-theme-openapi/src/theme') &&
-              path.includes(componenet),
+              path.includes(component),
           ).length > 0,
       )
       const versionReport = `<tbody><tr><td> Old version </td><td> ${oldVersion} </td></tr>
