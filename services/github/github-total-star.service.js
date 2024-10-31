@@ -111,7 +111,7 @@ const affiliationsAllowedValues = [
  * @param {string} value affiliation current value
  * @param {*} helpers object to construct custom error
  *
- * @returns {string} valiadtion error or value unchanged
+ * @returns {string} validation error or value unchanged
  */
 const validateAffiliations = (value, helpers) => {
   const values = value.split(',')
