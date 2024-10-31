@@ -407,7 +407,7 @@ describe('AuthHelper', function () {
     })
   })
 
-  context('JTW Auth', function () {
+  context('JWT Auth', function () {
     describe('_isJwtValid', function () {
       test(AuthHelper._isJwtValid, () => {
         given(dayjs().add(1, 'month').unix()).expect(true)
