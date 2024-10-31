@@ -209,7 +209,7 @@ describe('BaseService', function () {
         }
       })
 
-      // Ensure debuggabillity.
+      // Ensure debuggability.
       // https://github.com/badges/shields/issues/3784
       it('Includes the service class in the stack trace', async function () {
         try {
