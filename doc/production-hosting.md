@@ -59,7 +59,7 @@ files:
 - [`local-shields-io-production.yml`][local-shields-io-production.yml].
   This file contains secrets which are checked in with a deploy commit.
 - [`shields-io-production.yml`][shields-io-production.yml]. This file
-  contains non-secrets which are checked in to the main repo.
+  contains non-secrets which are checked into the main repo.
 - [`default.yml`][default.yml]. This file contains defaults.
 
 Secrets are supplied directly as environment vars.

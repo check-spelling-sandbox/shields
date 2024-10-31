@@ -13,7 +13,7 @@ manager for Python which manages a
 [virtualenv](https://virtualenv.pypa.io/en/latest/) for
 projects. It adds/removes packages from your \`Pipfile\` as
 you install/uninstall packages and generates the ever-important
-\`Pipfile.lock\`, which can be checked in to source control
+\`Pipfile.lock\`, which can be checked into source control
 in order to produce deterministic builds.
 
 The GitHub Pipenv badges are intended for applications using Pipenv
