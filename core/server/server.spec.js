@@ -193,7 +193,7 @@ describe('The server', function () {
         .and.to.include('badge not found')
     })
 
-    it('should return the 404 badge page for rando links', async function () {
+    it('should return the 404 badge page for random links', async function () {
       const { statusCode, body } = await got(
         `${baseUrl}this/is/most/definitely/not/a/badge.js`,
         {
