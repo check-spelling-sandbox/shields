@@ -37,7 +37,7 @@ describe('Metric format converters', function () {
     it('converts a gauge', function () {
       const json = [
         {
-          help: 'gause 1 help',
+          help: 'gauge 1 help',
           name: 'gauge1',
           type: 'gauge',
           values: [{ value: 20, labels: {} }],
