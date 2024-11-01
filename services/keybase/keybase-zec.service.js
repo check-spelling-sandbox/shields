@@ -3,7 +3,7 @@ import { pathParams } from '../index.js'
 import { nonNegativeInteger } from '../validators.js'
 import KeybaseProfile from './keybase-profile.js'
 
-const zcachAddressSchema = Joi.object({
+const zcashAddressSchema = Joi.object({
   status: Joi.object({
     code: nonNegativeInteger.required(),
   }).required(),
@@ -69,7 +69,7 @@ export default class KeybaseZEC extends KeybaseProfile {
     }
 
     const data = await this.fetch({
-      schema: zcachAddressSchema,
+      schema: zcashAddressSchema,
       options,
     })
 
