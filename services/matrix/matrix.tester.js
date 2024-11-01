@@ -216,7 +216,7 @@ t.create('invalid token')
         401,
         JSON.stringify({
           errcode: 'M_UNKNOWN_TOKEN',
-          error: 'Unrecognised access token.',
+          error: 'Unrecognized access token.',
         }),
       ),
   )
